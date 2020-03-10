@@ -1,0 +1,153 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h3 {
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+section {}
+
+.section__one {
+  width: 90%;
+  padding: 5%;
+  background-color: #fdfdfd;
+}
+
+.section__one>* {
+  margin-bottom: 1.5rem;
+}
+
+.section__one h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+.section__one h3 {
+  color: hsl(71, 73%, 54%);
+}
+
+.section__one p {
+  color: hsl(218, 22%, 67%);
+  line-height: 1.5;
+}
+
+.section__two {
+  display: flex;
+  flex-direction: column;
+}
+
+.section__half {
+  color: #fdfdfd;
+  width: 90%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.first {
+  background: hsl(179, 62%, 43%);
+  color: hsl(204, 43%, 93%);
+}
+
+.first h3 {
+  color: #fdfdfd;
+}
+
+.first>* {
+  margin-bottom: 1.5rem;
+}
+
+.amount {
+  color: hsl(204, 43%, 93%);
+}
+
+.amount span {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-right: .5rem;
+  color: #fdfdfd;
+}
+
+.sign-up {
+  text-align: center;
+}
+
+.sign-up button {
+  padding: 1.2rem 2rem;
+  background: hsl(71, 73%, 54%);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #fdfdfd;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 700;
+  box-shadow: 0 0 4px 0px #939393;
+  outline: none;
+}
+
+.sign-up button:hover {
+  box-shadow: 0 0 8px 1px #939393;
+}
+
+.second {
+  background-color: hsla(179, 62%, 43%, 0.9);
+  color: hsl(204, 43%, 93%);
+}
+
+.second h3 {
+  margin-bottom: 1.5rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  line-height: 1.5;
+  font-size: 1rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    height: 100%;
+  }
+
+  .section__one {
+    /* flex: 0 0 30%; */
+  }
+
+  .section__two {
+    /* flex: 0 0 70%; */
+    flex-direction: row;
+  }
+
+  .sign-up {
+    text-align: left;
+    max-width: 45%;
+  }
+}
