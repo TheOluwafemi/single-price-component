@@ -40,9 +40,13 @@ section {}
   color: hsl(71, 73%, 54%);
 }
 
+.header__text {
+  display: none;
+}
+
 .section__one p {
   color: hsl(218, 22%, 67%);
-  line-height: 1.5;
+  line-height: 2;
 }
 
 .section__two {
@@ -139,6 +143,14 @@ li {
 
   .section__one {
     /* flex: 0 0 30%; */
+  }
+
+  .section__one>p {
+    display: none;
+  }
+
+  .header__text {
+    display: block;
   }
 
   .section__two {
